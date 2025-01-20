@@ -1,0 +1,17 @@
+name: vbg_basics
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.13
+  - pip
+  - python-dotenv
+  - jupyterlab
+  - numpy
+  - pandas
+  - requests
+  - pip:
+    - plotly
+    - beautifulsoup4
+    - gradio
+    - ollama
