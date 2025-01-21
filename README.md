@@ -17,6 +17,11 @@ removed from environment.yml):
 conda env update -f environment.yml --prune
 ```
 
+- NOTE: You can later remove this environment with:
+```
+conda remove -n vbg_basics --all
+```
+
 - Activate the conda environment:
 ```
 conda activate vbg_basics
