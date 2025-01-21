@@ -10,6 +10,7 @@ dependencies:
   - numpy
   - pandas
   - requests
+  - ipywidgets
   - pip:
     - plotly
     - beautifulsoup4
