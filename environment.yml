@@ -18,3 +18,5 @@ dependencies:
     - gradio
     - ollama
     - openai
+    - feedparser
+    - lxml
