@@ -1,7 +1,11 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 
+from controllers import math_controller
+
 app = FastAPI()
+
+app.include_router(math_controller.router)
 
 @app.get("/", response_class=HTMLResponse)
 def home():
