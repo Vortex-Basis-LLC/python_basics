@@ -11,7 +11,7 @@ router = APIRouter(
 )
 
 @router.get("/", response_class=HTMLResponse)
-def root():
+async def root():
 	return """<html>
 	<head>
 		<title>FastAPI Math Controller</title>
@@ -25,6 +25,6 @@ def root():
 
 
 @router.post("/add")
-def add(request: math_models.AddRequest) -> math_models.AddResponse:
+async def add(request: math_models.AddRequest) -> math_models.AddResponse:
 	response = math_models.AddResponse(total = request.x + request.y)
 	return response

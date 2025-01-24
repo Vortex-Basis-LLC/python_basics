@@ -11,7 +11,7 @@ def setup_app() -> FastAPI:
 	app.include_router(math_controller.router)
 
 	@app.get("/", response_class=HTMLResponse)
-	def home():
+	async def home():
 		return """<html>
 		<head>
 			<title>FastAPI Simple Sample</title>
@@ -24,11 +24,11 @@ def setup_app() -> FastAPI:
 	"""
 
 	@app.get("/some-json")
-	def json_hello_world():
+	async def json_hello_world():
 		return { "msg": "Hello World" }
 
 	@app.get("/client-ip")
-	def client_ip(request: Request):
+	async def client_ip(request: Request):
 		return { "client_ip": request.client.host }
 	
 	return app
