@@ -1,6 +1,10 @@
 from fastapi import APIRouter
 from fastapi.responses import HTMLResponse
 
+
+from ..models import math_models
+	
+
 router = APIRouter(
     prefix="/math",
     tags=["Math"],
@@ -19,4 +23,8 @@ def root():
 </html>
 """
 
-# TODO: Add some math related endpoints here.
+
+@router.post("/add")
+def add(request: math_models.AddRequest) -> math_models.AddResponse:
+	response = math_models.AddResponse(total = request.x + request.y)
+	return response

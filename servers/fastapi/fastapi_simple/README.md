@@ -5,6 +5,10 @@ At command line with "vbg_basics" conda environment activated:
 ```
 uvicorn main:app
 ```
+or
+```
+python run.py
+```
 
 The app should listen at http://127.0.0.1:8000. 
 The root url should return an HTML welcome page.
