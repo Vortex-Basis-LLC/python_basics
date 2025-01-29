@@ -12,8 +12,9 @@ dependencies:
   - requests
   - ipywidgets
   - matplotlib
-  - chromadb
   - pip:
+    - pydantic
+    - qdrant-client
     - plotly
     - beautifulsoup4
     - gradio
