@@ -12,6 +12,7 @@ dependencies:
   - requests
   - ipywidgets
   - matplotlib
+  - chromadb
   - pip:
     - plotly
     - beautifulsoup4
@@ -23,3 +24,7 @@ dependencies:
     - gradio_client
     - fastapi
     - uvicorn
+    - langchain
+    - langchain-community
+    - langchain-core
+    - langchain-ollama
