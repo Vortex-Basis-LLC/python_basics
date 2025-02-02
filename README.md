@@ -31,3 +31,13 @@ conda activate vbg_basics
 ```
 jupyter lab
 ```
+
+## Environment Settings
+
+Some samples will required environment settings in a ".env" file in the root directory of this project
+will be loaded via load_dotenv(override=True) and os.getenv("KEYNAME").
+
+Here are some examples of some you might need to set:
+```
+HUGGINGFACE_TOKEN=...
+```

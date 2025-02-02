@@ -13,6 +13,7 @@ dependencies:
   - ipywidgets
   - matplotlib
   - pip:
+    - filelock
     - pydantic
     - qdrant-client
     - plotly
@@ -29,3 +30,9 @@ dependencies:
     - langchain-community
     - langchain-core
     - langchain-ollama
+    - bitsandbytes
+    - transformers
+    - sentence-transformers
+    - diffusers
+    - accelerate
+    - huggingface_hub
