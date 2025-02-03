@@ -12,6 +12,7 @@ dependencies:
   - requests
   - ipywidgets
   - matplotlib
+  - poppler
   - pip:
     - filelock
     - pydantic
@@ -37,3 +38,5 @@ dependencies:
     - accelerate
     - huggingface_hub
     - bitsandbytes
+    - pytesseract
+    - pdf2image
