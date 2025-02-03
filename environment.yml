@@ -36,3 +36,4 @@ dependencies:
     - diffusers
     - accelerate
     - huggingface_hub
+    - bitsandbytes
