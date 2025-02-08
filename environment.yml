@@ -40,3 +40,4 @@ dependencies:
     - bitsandbytes
     - pytesseract
     - pdf2image
+    - anthropic
