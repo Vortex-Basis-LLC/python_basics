@@ -1,12 +1,18 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
 
 from .math.controllers import math_controller
 
 
-def setup_app() -> FastAPI:
+def setup_app(static_img_file_path: str) -> FastAPI:
 
 	app = FastAPI()
+
+	# NOTE: Swagger docs will be available at /docs url.
+
+	# Static image files in the provided directory will be available at /img url.
+	app.mount("/img", StaticFiles(directory=static_img_file_path), name="img")
 
 	app.include_router(math_controller.router)
 

@@ -25,6 +25,7 @@ dependencies:
     - feedparser
     - lxml
     - gradio_client
+    - starlette
     - fastapi
     - uvicorn
     - langchain
